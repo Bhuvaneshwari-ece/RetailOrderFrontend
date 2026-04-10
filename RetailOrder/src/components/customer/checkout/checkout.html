@@ -1,0 +1,27 @@
+<div class="container">
+
+  <h2>Checkout</h2>
+
+  <div *ngIf="cartItems.length === 0" class="empty">
+    No items in cart
+  </div>
+
+  <div *ngFor="let item of cartItems" class="cart-item">
+    {{item.productName}} - Qty: {{item.quantity}}
+  </div>
+
+  <div class="payment-section">
+    <h3>Select Payment Method</h3>
+
+    <select [(ngModel)]="paymentMethod">
+      <option value="Cash">Cash</option>
+      <option value="UPI">UPI</option>
+      <option value="Card">Card</option>
+    </select>
+  </div>
+
+  <button (click)="placeOrder()" [disabled]="isLoading">
+    {{ isLoading ? 'Processing...' : 'Place Order' }}
+  </button>
+
+</div>
