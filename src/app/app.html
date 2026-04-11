@@ -1,0 +1,15 @@
+<div class="navbar">
+
+  <h2 class="logo">Admin Panel</h2>
+
+  <nav class="nav-links">
+    <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact:true}">Dashboard</a>
+    <a routerLink="/products" routerLinkActive="active">Products</a>
+    <a routerLink="/categories" routerLinkActive="active">Categories</a>
+  </nav>
+
+</div>
+
+<div class="content">
+  <router-outlet></router-outlet>
+</div>

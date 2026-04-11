@@ -1,0 +1,58 @@
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #343a40;
+  padding: 15px 30px;
+  color: white;
+}
+
+/* Logo */
+.logo {
+  margin: 0;
+  font-size: 22px;
+}
+
+/* Nav Links */
+.nav-links a {
+  margin-left: 20px;
+  text-decoration: none;
+  color: #ccc;
+  font-size: 16px;
+  transition: 0.3s;
+}
+
+/* Hover */
+.nav-links a:hover {
+  color: white;
+}
+
+/* Active Route */
+.nav-links a.active {
+  color: #fff;
+  font-weight: bold;
+  border-bottom: 2px solid #007bff;
+}
+
+/* Page Content */
+.content {
+  padding: 20px;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .nav-links {
+    margin-top: 10px;
+  }
+
+  .nav-links a {
+    display: block;
+    margin: 5px 0;
+  }
+}

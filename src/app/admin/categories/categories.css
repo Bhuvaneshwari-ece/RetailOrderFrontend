@@ -1,0 +1,157 @@
+/* Container */
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+/* Titles */
+.title {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+.subtitle {
+  margin-top: 20px;
+  color: #444;
+}
+
+/* Divider */
+.divider {
+  margin: 25px 0;
+  border: none;
+  border-top: 1px solid #ddd;
+}
+
+/* Form Card */
+.form-card {
+  background: #ffffff;
+  padding: 20px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Form Group */
+.form-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 15px;
+}
+
+/* Inputs */
+input {
+  padding: 10px;
+  border-radius: 8px;
+  border: 1px solid #ccc;
+  transition: 0.2s;
+}
+
+input:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.3);
+  outline: none;
+}
+
+/* Buttons Layout */
+.form-actions {
+  display: flex;
+  gap: 10px;
+}
+
+/* Buttons */
+.btn-add {
+  flex: 1;
+  padding: 10px;
+  background: linear-gradient(135deg, #28a745, #34d058);
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-add:hover {
+  opacity: 0.9;
+}
+
+.btn-cancel {
+  flex: 1;
+  padding: 10px;
+  background-color: #6c757d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.btn-edit {
+  padding: 6px 12px;
+  background-color: #ffc107;
+  border: none;
+  border-radius: 6px;
+  margin-right: 8px;
+  cursor: pointer;
+}
+
+.btn-delete {
+  padding: 6px 12px;
+  background-color: #dc3545;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* List */
+.list-container {
+  margin-top: 15px;
+}
+
+.list-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+  padding: 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  transition: 0.2s;
+}
+
+.list-item:hover {
+  transform: translateY(-2px);
+}
+
+/* Text */
+.category-info h4 {
+  margin: 0;
+  color: #222;
+}
+
+.category-info p {
+  margin: 5px 0 0;
+  color: #666;
+}
+
+/* Actions */
+.actions {
+  display: flex;
+  align-items: center;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .list-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .actions {
+    width: 100%;
+  }
+
+  .actions button {
+    width: 100%;
+  }
+}

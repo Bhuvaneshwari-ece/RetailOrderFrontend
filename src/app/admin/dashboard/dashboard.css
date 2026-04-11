@@ -1,0 +1,66 @@
+/* Container */
+.dashboard-container {
+  text-align: center;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+}
+
+/* Title */
+.title {
+  margin-bottom: 40px;
+  font-size: 32px;
+  color: #333;
+}
+
+/* Cards Layout */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  flex-wrap: wrap;
+}
+
+/* Card */
+.card {
+  width: 250px;
+  padding: 20px;
+  border-radius: 12px;
+  text-decoration: none;
+  color: black;
+  background: #f8f9fa;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: 0.3s;
+}
+
+/* Hover Effect */
+.card:hover {
+  transform: translateY(-5px);
+  background: #e9ecef;
+}
+
+/* Card Heading */
+.card h2 {
+  margin-bottom: 10px;
+}
+
+/* Button */
+.card button {
+  margin-top: 15px;
+  padding: 8px 15px;
+  border: none;
+  background-color: #007bff;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+  .card {
+    width: 90%;
+  }
+}
