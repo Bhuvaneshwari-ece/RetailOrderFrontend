@@ -1,0 +1,16 @@
+<h2>Products</h2>
+
+@for (product of products; track product.id) {
+
+  <div>
+    <p>{{ product.name }} - ₹{{ product.price }}</p>
+
+    <button (click)="addToCart(product)">
+      Add to Cart
+    </button>
+  </div>
+
+}
+
+<br>
+<a routerLink="/cart">Go to Cart →</a>

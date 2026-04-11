@@ -1,0 +1,27 @@
+<h2>Your Cart</h2>
+
+@if (cart && cart.items.length > 0) {
+
+  @for (item of cart.items; track item.productId) {
+
+    <div>
+      <p>Product ID: {{ item.productId }}</p>
+      <p>Quantity: {{ item.quantity }}</p>
+
+      <button (click)="removeItem(item.productId)">
+        Remove
+      </button>
+
+      <hr>
+    </div>
+
+  }
+
+} @else {
+
+  <p>Cart is empty</p>
+
+}
+
+<br>
+<a routerLink="/">← Back to Products</a>
