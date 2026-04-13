@@ -1,0 +1,29 @@
+<div class="container">
+
+  <h2>Order History</h2>
+
+  <div *ngIf="orders.length === 0">
+    No orders found
+  </div>
+
+  <div *ngFor="let order of orders" class="order-card">
+
+    <div class="order-header">
+      Order ID: {{order.id}}
+    </div>
+
+    <p class="status" [ngClass]="order.status.toLowerCase()">
+      Status: {{order.status}}
+    </p>
+
+    <p>Total: ₹{{order.totalAmount}}</p>
+
+    <ul>
+      <li *ngFor="let item of order.items">
+        {{item.productName}} - Qty: {{item.quantity}} - ₹{{item.price}}
+      </li>
+    </ul>
+
+  </div>
+
+</div>
