@@ -3,7 +3,7 @@ import { inject, Injectable, signal } from '@angular/core';
 import { Router } from '@angular/router';
 import { RegisterDto } from '../models/registerdto.model';
 import { AuthResponse } from '../models/authresponsedto.model';
-import { environment } from '../../environment/environment';
+import { environment } from '../../Environment/environment';
 import { LoginDto } from '../models/logindto.model';
 
 @Injectable({
