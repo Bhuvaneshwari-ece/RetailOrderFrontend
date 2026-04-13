@@ -1,4 +1,7 @@
 import { Routes } from '@angular/router';
+import { ProductList } from './components/product-list/product-list';
+import { CartComponent } from './components/cart/cart.component';
+
 
 import { Login } from './core/components/auth/login/login';
 import { Register } from './core/components/auth/register/register';
@@ -26,4 +29,5 @@ export const routes: Routes = [
    { path: '', component: ProductList },
   { path: 'cart', component: CartComponent }
 ];
+
 

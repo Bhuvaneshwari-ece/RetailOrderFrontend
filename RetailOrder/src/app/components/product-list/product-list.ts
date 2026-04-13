@@ -8,8 +8,10 @@ import { CartService } from '../../core/services/cart';
   selector: 'app-product-list',
   standalone: true,
   imports: [CommonModule],
+
   templateUrl: './product-list.component.html',
   styleUrls: ['./product-list.component.css']
+
 })
 export class ProductList implements OnInit {
 
